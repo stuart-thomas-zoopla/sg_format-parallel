@@ -19,7 +19,7 @@ for drive in $drive_list; do
     logfiles+=" $logfile"
 done
 
-wait
-
 echo "Showing live update of log files. Press Ctrl+C to exit."
 tail -f $logfiles
+
+wait
